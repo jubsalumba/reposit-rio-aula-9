@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Tropicália</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .btn-acessibilidade {
+            background-color: white; 
+            color: black; 
+            border: 1px solid black; 
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #opcoes-acessibilidade {
+            display: flex;
+            gap: 5px;
+            margin-top: 5px;
+        }
+
+        .nav-img {
+            width: 120px; 
+            height: auto;
+        }
+
+        .nav-link {
+            font-size: 18px;
+        }
+
+        .menu-acessibilidade {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .img-inicio {
+            max-width: 300px; 
+            height: auto;
+            border-radius: 10px;
+        }
+
+        #inicio h1 {
+            color: #fff;
+        }
+
+        #inicio p {
+            font-size: 18px;
+            color: #151515;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="p-3 bg-dark">
+        <nav class="container d-flex justify-content-between align-items-center">
+
+            
+            <img src="img/logo.jpg" class="nav-img" alt="Logo" loading="lazy">
+
+            
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link text-white fw-bold" href="#inicio">Início!</a></li>
+                <li class="nav-item"><a class="nav-link text-white fw-bold" href="#galeria">Galeria!</a></li>
+                <li class="nav-item"><a class="nav-link text-white fw-bold" href="#contato">Contato!</a></li>
+            </ul>
+
+           
+            <div id="acessibilidade" class="menu-acessibilidade">
+                <button id="botao-acessibilidade" class="btn btn-acessibilidade fw-bold">Acessibilidade</button>
+                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
+                    <button id="aumentar-fonte" class="btn btn-acessibilidade fw-bold">A +</button>
+                    <button id="diminuir-fonte" class="btn btn-acessibilidade fw-bold">A -</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <!-- Conteúdo -->
+
+        <section id="inicio" class="my-5">
+            <div class="inicio-fundo d-flex flex-column align-items-center text-center">
+
+                
+                <div class="d-flex justify-content-center align-items-center w-100 flex-wrap">
+                    <!-- Imagem -->
+                    <div class="col-md-5 d-flex justify-content-center">
+                        <img src="img/gal, beh e rita.jpg"
+                            alt="A imagem apresenta Gal Costa, Maria Bethânia e Rita Lee juntas, sentadas num sofá."
+                            title="Gal Costa, Maria Bethânia e Rita   labelee" class="img-fluid img-inicio">
+                    </div>
+
+                    
+                    <div class="col-md-6 text-dark text-start p-3">
+                        <h1 class="display-5 fst-italic fw-bold text-dark">Música Popular Brasileira</h1>
+                        <p class="lead">
+                            Gal Costa, Maria Bethânia e Rita Lee são ícones que ajudaram a moldar a história da MPB. Gal trouxe
+                            sua voz poderosa e versátil, unindo tradição e modernidade, tornando-se símbolo da Tropicália.
+                            Maria Bethânia encantou com sua interpretação intensa e poética, transformando cada canção em
+                            experiência única, fortalecendo a riqueza lírica da música brasileira. Rita Lee, com seu estilo
+                            irreverente e inovador, quebrou barreiras do rock e da MPB, abrindo caminho para novas sonoridades
+                            e liberdade artística. Juntas, elas inspiraram gerações e consolidaram a MPB como expressão
+                            cultural vibrante e diversa.
+                        </p>
+                    </div>
+                </div>
+
+                
+                <div class="mt-4">
+                    <a href="#mpb" class="btn btn-primary btn-lg botao-inicio fw-semibold">Quero conhecer!</a>
+                </div>
+            </div>
+        </section>
+    
+
+        <section id="tropicalia" class="my-5 pt-6 secao-tropicalia">
+            <div class="container d-flex align-items-center ">
+                <div class="col-4 d-flex justify-content-center">
+                    <img src="img/mpb.png" class="rounded-pill" alt="" width="273" height="331" loading="lazy">
+                </div>
+                <div class="col-5">
+                    <h2>O que foi a Música Popular Brasileira?</h2>
+                    <p class="p-2">A Música Popular Brasileira (MPB) surgiu nos anos 1960 como uma continuação e transformação da bossa
+                        nova, incorporando elementos de gêneros já existentes no Brasil, como samba, baião, moda de viola, além
+                        de influências internacionais como o jazz e o rock.
+                        Nesse período, em meio à Ditadura Militar, a MPB ganhou força como forma de protesto político e social,
+                        trazendo letras críticas e inteligentes, muitas vezes disfarçadas para escapar da censura. Ao mesmo tempo,
+                        também abordava temas mais leves, como o amor.
+                        Os Festivais da Canção, transmitidos pela televisão, tiveram papel essencial na divulgação de novos talentos,
+                        revelando artistas que se tornaram símbolos da MPB.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria">
+            <h2 class="text-center pt-5">Galeria!</h2>
+            <div class="container p-3 mt-3 fundo-galeria ">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-4">
+                        <img src="img/chico.png"
+                            class="img-fluid rounded-5" loading="lazy">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/djavan.png" class="img-fluid rounded-5" loading="lazy">
+                    </div>
+                </div>
+                <div class="row mt-4  justify-content-md-center">
+                    <div class="col-md-4">
+                        <img src="img/gal.png" class="img-fluid rounded-5"
+                            loading="lazy">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/maria.png"
+                            class="img-fluid rounded-5" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+                <div class="row justify-content-md-center">
+                    <div class="col-md-4">
+                        <img src="img/cartola.jpg"
+                            class="img-fluid rounded-5" loading="lazy">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/gilberto.jpg" class="img-fluid rounded-5" loading="lazy">
+                    </div>
+                </div>
+                <div class="row mt-4  justify-content-md-center">
+                    <div class="col-md-4">
+                        <img src="img/tom.jpg" class="img-fluid rounded-5"
+                            loading="lazy">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/marisa monte.jpg"
+                            class="img-fluid rounded-5" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="container p-5 d-flex justify-content-center">
+                <div class="col-md-8 col-lg-10 rounded-5 formulario">
+                    <!-- Caixa do formulário com 60% de largura -->
+                    <h2 class="mb-3">Entre em contato!</h2>
+                    <form>
+                        <div class="form-group mb-3">
+                            <label for="nome">Seu Nome</label>
+                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1"
+                                placeholder="Digite seu nome completo">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email">Seu Email</label>
+                            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1"
+                                placeholder="Digite seu email">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4"
+                                placeholder="Escreva sua mensagem"></textarea>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill">Enviar
+                                mensagem</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center p-3 fst-italic">
+        <p>Acesse nossas redes:</p>
+        <i class="bi bi-whatsapp"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-tiktok"></i>
+        <p class="mt-3">Desenvolvido por Start by Alura. Projeto fictício sem fins comerciais.</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
+    <script>
+        const aumentar = document.getElementById("aumentar-fonte");
+        const diminuir = document.getElementById("diminuir-fonte");
+        const body = document.body;
+
+        aumentar.addEventListener("click", () => {
+            let tamanho = parseInt(window.getComputedStyle(body).fontSize);
+            body.style.fontSize = (tamanho + 2) + "px";
+        });
+
+        diminuir.addEventListener("click", () => {
+            let tamanho = parseInt(window.getComputedStyle(body).fontSize);
+            body.style.fontSize = (tamanho - 2) + "px";
+        });
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
